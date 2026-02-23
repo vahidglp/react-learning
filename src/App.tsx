@@ -5,14 +5,14 @@ import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 
 export type Theme = "light" | "dark";
 
-type User = {
-  username: string;
-  password: string;
-};
+// type User = {
+//   username: string;
+//   password: string;
+// };
 
 function App(): ReactNode {
 
-   const [counter, setCounter] = useState(0);
+  //  const [counter, setCounter] = useState(0);
   // const [user, setUser] = useState<Readonly<User>>({
   //   username: "vahid golpayegani",
   //   password: "1234",
@@ -51,9 +51,8 @@ function App(): ReactNode {
       <pre>{JSON.stringify(user, null, 2)}</pre>
       <button onClick={handleButtonChangePassword}>Change Password</button> */}
       <ThemeSwitch theme={theme} onChangeTheme={handleChangeTheme} />
-      <Counter theme={theme} title="counter 1" />
-      <Counter theme={theme} title="counter 2" />
-      <Counter theme={theme} title="counter 3" />
+      <Counter theme={theme} title="counter 1" >salam</Counter>
+      <Counter theme={theme} title="counter 2" >hi</Counter>
     </div>
   );
 }
